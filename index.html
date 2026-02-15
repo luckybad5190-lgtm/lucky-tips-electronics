@@ -1,119 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="google-site-verification" content="2Ag59fET8-1DWHZ16fJdc1QEzoTozhNJM5feqixiOms" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lucky Tips Electronics</title>
+
+<title>LED TV Repair in Jalgaon | Bhusawal | Chopda - Lucky Tips Electronics</title>
+
+<meta name="description" content="Lucky Tips Electronics provides professional LED TV and DTH repair service in Jalgaon, Bhusawal, Chopda and nearby areas. Same day home service available. Call 9373125913.">
+
+<meta name="robots" content="index, follow">
 
 <style>
-
-/* ===== COLOR THEME ===== */
-:root{
---primary:#0b1f3a;
---highlight:#ffd700;
---white:#ffffff;
---black:#000000;
-}
 
 body{
 margin:0;
 font-family:Arial, sans-serif;
-background:var(--white);
-color:var(--black);
+background:#f4f4f4;
 scroll-behavior:smooth;
 }
 
-/* ===== NAVBAR ===== */
-.navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:15px 30px;
-background:var(--primary);
-position:fixed;
-width:100%;
-top:0;
-z-index:1000;
-}
-
-.logo{
-color:var(--highlight);
-font-size:24px;
-font-weight:bold;
-}
-
-.nav-links{
-list-style:none;
-display:flex;
-gap:25px;
-}
-
-.nav-links a{
-color:white;
-text-decoration:none;
-font-weight:bold;
-transition:0.3s;
-}
-
-.nav-links a:hover{
-color:var(--highlight);
-}
-
-/* Hamburger */
-.menu-toggle{
-display:none;
-font-size:28px;
-color:white;
-cursor:pointer;
-}
-
-/* ===== MOBILE MENU ===== */
-@media(max-width:768px){
-
-.nav-links{
-position:absolute;
-top:60px;
-right:0;
-background:var(--primary);
-flex-direction:column;
-width:220px;
-text-align:center;
-padding:20px 0;
-display:none;
-animation:slideMenu 0.4s ease forwards;
-}
-
-.nav-links li{
-margin:15px 0;
-}
-
-.menu-toggle{
-display:block;
-}
-
-}
-
-@keyframes slideMenu{
-from{right:-220px; opacity:0;}
-to{right:0; opacity:1;}
-}
-
-/* ===== HEADER ===== */
+/* ===== BANNER ===== */
 header{
-background:linear-gradient(rgba(11,31,58,0.85),rgba(11,31,58,0.85)),
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
 url('https://images.unsplash.com/photo-1601944179066-29786cb9d32a?auto=format&fit=crop&w=1600&q=80');
 background-size:cover;
 background-position:center;
 color:white;
 text-align:center;
-padding:200px 20px 150px;
+padding:180px 20px;
 }
 
 .moving-text{
 font-size:48px;
-color:var(--highlight);
-font-weight:900;
+color:#ffd700;
+font-weight:bold;
 animation:slideText 3s ease-in-out infinite alternate;
 }
 
@@ -122,62 +43,48 @@ from{letter-spacing:2px;}
 to{letter-spacing:8px;}
 }
 
-header h2{
-font-size:24px;
-}
-
 .btn{
 display:inline-block;
 margin:10px;
-padding:14px 28px;
-background:var(--highlight);
-color:black;
-text-decoration:none;
+padding:12px 25px;
 border-radius:30px;
+text-decoration:none;
 font-weight:bold;
-transition:0.3s;
-cursor:pointer;
-}
-
-.btn:hover{
-background:white;
-}
-
-/* ===== TRUST BANNER ===== */
-.trust{
-background:var(--primary);
 color:white;
-padding:40px 20px;
-font-size:20px;
-text-align:center;
 }
+
+.call{background:#ff9800;}
+.book{background:#007bff;}
+.whatsapp{background:#25D366;}
+.review{background:#ea4335;}
 
 /* ===== SECTION ===== */
 .section{
-padding:80px 20px;
+padding:70px 20px;
 text-align:center;
+}
+
+.service-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
 }
 
 .service-box{
 background:white;
 padding:25px;
-margin:25px auto;
-max-width:600px;
-border-radius:10px;
-box-shadow:0 0 20px rgba(0,0,0,0.2);
+width:280px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
 transition:0.4s;
 }
 
 .service-box:hover{
 transform:translateY(-10px);
-box-shadow:0 0 30px rgba(255,215,0,0.8);
+box-shadow:0 10px 30px rgba(255,193,7,0.8);
 }
 
-ul{
-text-align:left;
-}
-
-/* ===== VIDEOS ===== */
 .video-container{
 display:flex;
 flex-wrap:wrap;
@@ -191,65 +98,53 @@ height:200px;
 border-radius:10px;
 }
 
-/* ===== REVIEWS ===== */
-.review{
-background:white;
-margin:15px auto;
-padding:15px;
-max-width:500px;
-border-radius:10px;
-box-shadow:0 0 15px rgba(0,0,0,0.2);
-}
-
-/* ===== POPUP FORM ===== */
-.popup{
-display:none;
-position:fixed;
-top:0;left:0;
-width:100%;height:100%;
-background:rgba(0,0,0,0.7);
-justify-content:center;
-align-items:center;
-}
-
-.popup-content{
-background:white;
-padding:20px;
-width:300px;
-border-radius:10px;
+footer{
+background:#111;
+color:white;
 text-align:center;
+padding:30px;
 }
 
-.popup-content input,
-.popup-content textarea{
-width:90%;
-padding:8px;
-margin:5px 0;
+.sticky-bar{
+position:fixed;
+bottom:0;
+width:100%;
+background:#111;
+display:flex;
+justify-content:space-around;
+padding:10px;
 }
 
-/* ===== FLOAT WHATSAPP ===== */
+.sticky-bar a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+.moving-text{font-size:30px;}
+.video-container iframe{width:100%;}
+}
+/* Floating WhatsApp Button */
 .float-whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-font-size:26px;
+font-size:28px;
 padding:15px;
 border-radius:50%;
 text-decoration:none;
+box-shadow:0 0 15px rgba(0,0,0,0.3);
+animation:whatsappPulse 1.5s infinite;
+z-index:999;
 }
 
-/* ===== FOOTER ===== */
-footer{
-background:var(--primary);
-color:white;
-text-align:center;
-padding:30px;
-}
-
-@media(max-width:768px){
-.video-container iframe{width:100%;}
+@keyframes whatsappPulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.15);}
+100%{transform:scale(1);}
 }
 
 </style>
@@ -257,188 +152,142 @@ padding:30px;
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-<div class="logo">Lucky Tips Electronics</div>
-<div class="menu-toggle" onclick="toggleMenu()">☰</div>
-<ul class="nav-links" id="navLinks">
-<li><a href="#">Home</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#videos">Videos</a></li>
-<li><a href="#reviews">Reviews</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-
-<!-- HOME -->
+<!-- HEADER -->
 <header>
 <h1 class="moving-text">Lucky Tips Electronics</h1>
 <h2>Electronic Repairing Expert Advice & Solutions</h2>
-<p>LED TV & DTH Repair • Installation • Home Service Available</p>
-<p>Fast • Reliable • Affordable</p>
-<a href="tel:+91 9373125913" class="btn">📞 Call Now</a>
-<a href="https://forms.gle/cpF2cfuCM2yafcQG9" target="_blank">
-  <button style="background-color:#28a745;
-                 color:white;
-                 padding:12px 25px;
-                 font-size:18px;
-                 border:none;
-                 border-radius:8px;
-                 cursor:pointer;">
-    Book Service Now
-  </button>
-</a>
-<a href="https://wa.me/919XXXXXXXXX" target="_blank">
-  <button style="background-color:#25D366;
-                 color:white;
-                 padding:12px 25px;
-                 font-size:18px;
-                 border:none;
-                 border-radius:8px;">
-    WhatsApp Booking
-  </button>
-</a>
+<p>LED TV & DTH Repair Specialist in Jalgaon | Bhusawal | Chopda</p>
+
+<a href="tel:+919373125913" class="btn call">📞 Call Now</a>
+<a href="https://forms.gle/cpF2cfuCM2yafcQG9" target="_blank" class="btn book">📝 Book Service</a>
+<a href="https://wa.me/919373125913" target="_blank" class="btn whatsapp">💬 WhatsApp</a>
+<a href="https://share.google/bg42rGSemTZuZQOGJ" target="_blank" class="btn review">⭐ Google Reviews</a>
 </header>
 
-<div class="trust">
+<div style="background:#0b1f3a;color:white;padding:30px;text-align:center;font-size:20px;font-weight:bold;">
 17+ Years Experience | 1000+ TVs Repaired | Genuine Parts Used
 </div>
 
 <!-- SERVICES -->
 <section class="section" id="services">
-<h2>📺 LED TV & DTH Repair Specialist</h2>
+<h2>📺 LED TV & DTH Repair Service in Jalgaon | Bhusawal | Chopda</h2>
+
+<p>
+Lucky Tips Electronics provides professional LED TV repair and DTH installation service 
+in Jalgaon, Bhusawal, Chopda, Yawal, Raver, Amalner and nearby villages.
+We offer same day home service at affordable price.
+</p>
+
+<div class="service-container">
 
 <div class="service-box">
-<h3>LED TV Repair</h3>
+<h3>LED TV Repair in Jalgaon</h3>
 <ul>
-<li>✔ Led tv No Power Problem</li>
-<li>✔ Backlight Repair</li>
+<li>✔ LED TV No Power Problem</li>
+<li>✔ Backlight Repair Service</li>
 <li>✔ Sound OK But No Picture</li>
 <li>✔ Motherboard Repair</li>
 <li>✔ SMPS Repair</li>
 <li>✔ Panel Light Issue</li>
 <li>✔ Display Line Problem</li>
-<li>✔ Software Issue</li>
-<li>✔ Software logo hang </li>
+<li>✔ Software Issue & Logo Hang</li>
 </ul>
 </div>
 
 <div class="service-box">
-<h3>📡 DTH Services</h3>
+<h3>📡 DTH Installation & Repair</h3>
 <ul>
 <li>✔ New DTH Installation</li>
-<li>✔ Dish Alignment</li>
-<li>✔ No Signal Problem</li>
+<li>✔ Dish Alignment Service</li>
+<li>✔ No Signal Problem Fix</li>
 <li>✔ Set-Top Box Repair</li>
 <li>✔ Remote Not Working</li>
-<li>✔ HD Upgrade free to air box</li>
+<li>✔ HD Upgrade & Free to Air Box</li>
 <li>✔ Cable Replacement</li>
 </ul>
 </div>
 
-<h3>Brands We Service</h3>
+</div>
+
+<h3>🔧 Brands We Service</h3>
 <p>
-Samsung • LG • Sony • Mi • TCL • onida • Vu • Panasonic • Philips<br>
-Tata Play • Airtel Digital TV • Dish TV • Videocon d2h • sun direct
+Samsung TV Repair • LG TV Repair • Sony TV Repair • Mi TV Repair • TCL • Onida • Vu • Panasonic • Philips<br>
+Tata Play • Airtel Digital TV • Dish TV • Videocon d2h • Sun Direct
 </p>
+
 </section>
+
 
 <!-- VIDEOS -->
 <section class="section" id="videos">
 <h2>🎥 Our Repair Work</h2>
 <div class="video-container">
 
-<iframe 
-src="https://www.youtube.com/embed/847Bf_g4Utw"
-title="YouTube video player"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
-
-<iframe 
-src="https://www.youtube.com/embed/fTvpoVy8di8"
-title="YouTube video player"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
-
-<iframe 
-src="https://www.youtube.com/embed/XpROoqX7E6Q"
-title="YouTube video player"
-frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-allowfullscreen>
-</iframe>
+<iframe src="https://www.youtube.com/embed/847Bf_g4Utw" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/fTvpoVy8di8" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/XpROoqX7E6Q" allowfullscreen></iframe>
 
 </div>
-
 </section>
-<meta name="description" content="Lucky Tips Electronics provides LED TV repair service in Jalgaon, Bhusawal, Chopda, Yawal, Raver, Amalner and nearby areas. Same day home service available.">
 
-<!-- REVIEWS -->
 <section class="section" id="reviews">
 <h2>⭐ Customer Satisfaction is Our Priority</h2>
+
 <div class="review">⭐ Fast service and reasonable charges.</div>
 <div class="review">⭐ My TV backlight repaired in one day.</div>
 <div class="review">⭐ Very professional technician.</div>
+
 </section>
+
 
 <!-- CONTACT -->
-<section class="section" id="contact">
-<h2>📞 Contact Us</h2>
+<section class="section">
+<h2>📍 Service Areas</h2>
+<p>We provide LED TV repair service in Jalgaon, Bhusawal, Chopda, Yawal, Raver, Amalner and nearby villages.</p>
 <p>Call / WhatsApp: 9373125913</p>
-<p>Location: jalgaon bhokar </p>
-<p>Working Hours: 9 AM – 9 PM</p>
-<p>Home Service Available</p>
 </section>
 
-<!-- SEO TEXT -->
+<section class="section" id="contact">
+<h2>📞 Contact Us</h2>
+
+<p><strong>Call / WhatsApp:</strong> 9373125913</p>
+<p><strong>Location:</strong> Jalgaon Bhokar</p>
+<p><strong>Working Hours:</strong> 9 AM – 9 PM</p>
+<p><strong>Home Service Available</strong></p>
+
+</section>
+
+
 <section class="section">
+<h2>Best LED TV Repair Near Me</h2>
 <p>
-We provide LED TV and DTH repair services in jalgaon bhokar and nearby areas.
-We specialize in backlight repair, panel repair, motherboard repair,
-dish alignment, and signal problem fixing.
-If you are searching for “LED TV Repair Near Me” or “DTH Repair Near Me”,
-contact Lucky Tips Electronics today.
+If you are searching for LED TV repair near me in Jalgaon, Bhusawal or Chopda,
+Lucky Tips Electronics is the trusted service center.
+We provide fast and reliable LED TV and DTH repair service with experienced technician.
+Call now for same day home service.
 </p>
 </section>
 
-<footer>
-Lucky Tips Electronics<br>
-LED TV & DTH Repair Service<br>
-Call: 9373125913<br>
-Location: jalgaon bhokar 425002 maharashtra
-</footer>
 
-<!-- POPUP FORM -->
-<div class="popup" id="popupForm">
-<div class="popup-content">
-<h3>Book Home Service</h3>
-<input type="text" placeholder="Your Name"><br>
-<input type="text" placeholder="Mobile Number"><br>
-<textarea placeholder="Problem Details"></textarea><br>
-<button class="btn" onclick="closeForm()">Submit</button>
-</div>
+
+
+
+
 </div>
 
-<a href="https://wa.me/91 9373125913" class="float-whatsapp">💬</a>
 
-<script>
-function toggleMenu(){
-let nav=document.getElementById("navLinks");
-nav.style.display = (nav.style.display==="block") ? "none" : "block";
-}
-
-function openForm(){
-document.getElementById("popupForm").style.display="flex";
-}
-
-function closeForm(){
-document.getElementById("popupForm").style.display="none";
-}
-</script>
+<!-- STICKY BAR -->
+<div class="sticky-bar">
+<a href="tel:+919373125913">📞 Call</a>
+<a href="https://forms.gle/cpF2cfuCM2yafcQG9" target="_blank">📝 Book</a>
+<a href="https://wa.me/919373125913" target="_blank">💬 WhatsApp</a>
+</div>
 
 </body>
+<a href="https://wa.me/919373125913" 
+class="float-whatsapp" 
+target="_blank">
+💬
+</a>
+
 </html>
